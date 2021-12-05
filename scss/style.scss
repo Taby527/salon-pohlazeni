@@ -2,7 +2,7 @@
 $primary: rgb(47, 27, 53);
 $secondary: rgb(119, 114, 184);
 $tertiary: rgb(93, 67, 98);
-$background1: white;
+$background1: snow;
 $background2: snow;
 $pink: rgb(255, 206, 255);
 $footer: rgb(74, 55, 45);
@@ -53,6 +53,7 @@ p {
   box-sizing: border-box;
   border: 5px solid $pink;
   box-shadow: $shadow;
+  border-radius: 5px;
 }
 .header__logo--smaller {
   color: $pink;
@@ -61,6 +62,7 @@ p {
   box-sizing: border-box;
   border: 5px solid $pink;
   box-shadow: $shadow;
+  border-radius: 5px;
 }
 h1 {
   margin: 5%;
@@ -388,4 +390,71 @@ h2 {
 .main__border:active {
   border-bottom-width: 2px;
   transform: translateY(2px);
+}
+
+// ------------------------------
+//  stylizace stránky kontakt---
+// ------------------------------
+.contact {
+  background-color: $background2;
+}
+.contact__grid {
+  width: 80%;
+  margin: auto;
+}
+.contact__border {
+  box-shadow: $shadow2;
+  margin-top: 1em;
+  position: relative;
+  padding: 1em 0;
+}
+.contact__logo {
+  position: absolute;
+  width: 170px;
+  background-color: $footer;
+  border-radius: 5px;
+  right: 0;
+  top: 0;
+}
+.contact__info {
+  padding: .5em 1em;
+}
+.contact__icon {
+  height: 1em;
+  padding-left: .7em;
+}
+.contact__flex {
+  display: grid;
+  grid-template-columns: 1em 1fr;
+}
+.contact__adress {
+  padding-top: 15px;
+}
+.contact__tel {
+  padding-top: 4px;
+}
+.contact__email {
+  padding-top: 5px;
+}
+.contact__map {
+  margin: auto;
+  margin-top: 1em;
+}
+.contact__iframe {
+  width: 100%;
+}
+.contact__formular {
+  padding: .5em 1em;
+  font-family: $text;
+  font-size: $text-size;
+}
+.contact__button {
+  color: $background2;
+  background-color: $primary;
+  border: none;
+  box-shadow: $shadow;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-family: $text;
+  display: block;
 }
