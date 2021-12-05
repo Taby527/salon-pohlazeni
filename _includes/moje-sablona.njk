@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salón Pohlazení</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <div class="body">
+    <body>
+      <div class="containare">
+        <header class="header">
+          <img
+            class="header__foto"
+            src="/images/woman-relaxing-beauty-salon.jpg"
+            alt="relaxující žena"
+          />
+          <div class="header__logo">
+            <div class="header__logo--original">
+              <h1>Salón</h1>
+              <h1>Pohlazení</h1>
+            </div>
+          </div>
+        </header>
+        <nav class="menu">
+          <!-- hamburger -->
+          <button class="menu__hamburger" id="hamburger">
+            <div class="menu__burger"></div>
+            <i class="fas fa-bars"></i>
+          </button>
+          <!-- ----------- -->
+          <!-- navigace link -->
+          <div class="menu__links" id="nav-ul">
+            <a href="/uvod">Úvod</a>
+            <a href="#Novinky">Novinky</a>
+            <a href="/cenik">Ceník</a>
+            <a href="#Kontakt">Kontakt</a>
+          </div>
+        </nav>
+        <main>
+        {{ content | safe }}
+        </main>
+        <footer class="footer">
+          <div class="footer__logo">
+            <div class="header__logo--smaller">
+              <h1>Salón Pohlazení</h1>
+            </div>
+          </div>
+          <p class="footer__text">© 2021</p>
+        </footer>
+      </div>
+      <script src=".menu_roll.js"></script>
+      <script src=".menu.js"></script>
+      <script src=".text_roll.js"></script>
+    </body>
+  </div>
+</html>
+
