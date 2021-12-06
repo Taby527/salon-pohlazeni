@@ -16,14 +16,12 @@ title: Úvodní strana
       <p class="contact__info">Ne: Zavřeno</p>
     </div>
     <div class="contact__border">
-      <div class="contact__logo">
-        <div class="header__logo--smaller">
-          <h1>Salón Pohlazení</h1>
-        </div>
+      <div class="contact__logo header__logo--smaller">
+        <h1>Salón Pohlazení</h1>
       </div>
       <div class="contact__flex">
         <img
-          class="contact__icon  contact__adress"
+          class="contact__icon contact__adress"
           src="/images/ikona_mista-urceni.PNG"
           alt=""
         />
@@ -42,41 +40,57 @@ title: Úvodní strana
         <p class="contact__info">tel.: xxx xxx xxx</p>
       </div>
       <div class="contact__flex">
-        <img class="contact__icon contact__email" src="/images/ikona_emailu.PNG" alt="" />
+        <img
+          class="contact__icon contact__email"
+          src="/images/ikona_emailu.PNG"
+          alt=""
+        />
         <p class="contact__info">e-mail: ---@xy.cz</p>
       </div>
     </div>
-    <div class="contact__map">
-      <iframe class="contact__iframe"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.1595316292072!2d18.000827103010533!3d49.84925668368205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713dc2b2e373d07%3A0x95200f8d40a5a718!2sSlezsk%C3%A1%20250%2C%20747%2069%20Pust%C3%A1%20Polom!5e0!3m2!1scs!2scz!4v1638729181545!5m2!1scs!2scz"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </div>
-    <div class="contact__formular contact__border">
-      <form action="adresa" method="post">
-        <label for="email">E-mail</label>
-        <input
-          type="e-mail"
-          name="e-mail"
-          id="e-mail"
-          size="30"
-          maxlength="30"
-        />
-        <label for="k-odeslani">K odeslání</label>
-        <textarea
-          name="k-odeslani"
-          id="k-odeslani"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <input type="checkbox" name="agree" id="agree" checked />
-        <label for="agree">Souhlasím se zasláním odpovědi na svůj e-mail</label>
-        <button class="contact__button" type="submit" name="button">
-          <a href="/potvrzeni"></a>Odeslat
-        </button>
-      </form>
+    <div class="contact__map-formular">
+      <div class="contact__map">
+        <iframe
+          class="contact__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.1595316292072!2d18.000827103010533!3d49.84925668368205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713dc2b2e373d07%3A0x95200f8d40a5a718!2sSlezsk%C3%A1%20250%2C%20747%2069%20Pust%C3%A1%20Polom!5e0!3m2!1scs!2scz!4v1638729181545!5m2!1scs!2scz"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact__formular">
+        <form action="adresa" method="post">
+          <div class="contact__form-field">
+            <label for="email">E-mail</label>
+            <input
+              type="e-mail"
+              name="e-mail"
+              id="e-mail"
+              size="30"
+              maxlength="30"
+            />
+          </div>
+          <div class="contact__form-field">
+            <label for="k-odeslani">K odeslání</label>
+            <textarea
+              name="k-odeslani"
+              id="k-odeslani"
+              cols="29"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="contact__form-checkbox">
+            <input type="checkbox" name="agree" id="agree" checked />
+            <label for="agree"
+              >Souhlasím se zasláním odpovědi na svůj e-mail</label
+            >
+          </div>
+
+          <button class="contact__button" type="submit" name="button">
+            <a class="contact__button2" href="/potvrzeni">Odeslat</a>
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </main>
