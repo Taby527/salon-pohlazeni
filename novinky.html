@@ -1,0 +1,18 @@
+---
+layout: moje-sablona.njk
+title: Novinky
+---
+
+<!-- příspěvek do kolekce -->
+{% for post in collections.novinky %}
+<div class="news__border">
+  <div class="news__grid">
+    <img src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+    <div class="news__blog">
+      <h3>{{ post.data.title }}</h3>
+      <p>{{ post.data.perex }}</p>
+      <p><a href="{{ post.url }}">celý článek</a></p>
+    </div>
+  </div>
+</div>
+{% endfor %}

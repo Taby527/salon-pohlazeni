@@ -361,6 +361,48 @@ h2 {
   text-decoration: none;
 }
 
+.news__border {
+  width: 80%;
+  margin: auto;
+}
+
+.news__grid {
+  margin: 1em 0;
+}
+
+h3 {
+  margin: 0.5em 0;
+  font-family: "Audiowide", cursive;
+  size: 10px;
+  color: #2f1b35;
+}
+
+.article {
+  width: 80%;
+  margin: auto;
+}
+
+.article__text {
+  font-size: "Audiowide", cursive;
+  margin-bottom: 1em;
+}
+
+.article__meta {
+  display: flex;
+  justify-content: right;
+  margin: 1em 0;
+}
+
+.article__title {
+  font-family: "Audiowide", cursive;
+  font-size: 14px;
+  margin-top: 1em;
+}
+
+.article__image {
+  width: 100%;
+}
+
 @media screen and (min-width: 600px) {
   .containare {
     width: 550px;
@@ -442,6 +484,20 @@ h2 {
   .contact__form-checkbox {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .news__grid {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 20px;
+  }
+
+  .news img {
+    width: 100%;
+  }
+
+  .article__text {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 850px) {
@@ -537,6 +593,11 @@ h2 {
   .contact__logo {
     position: absolute;
     right: 56px;
+  }
+
+  .article__content {
+    display: grid;
+    grid-template-columns: 20% 1fr;
   }
 }
 @media screen and (min-width: 1200px) {

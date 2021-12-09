@@ -345,6 +345,48 @@ h2 {
   text-decoration: none;
 }
 
+// stylování stránky novinky-----------
+.news__border {
+  width: 80%;
+  margin: auto;
+  
+}
+.news__grid {
+  margin: 1em 0;
+}
+
+h3 {
+  margin: .5em 0;
+  font-family: $text;
+  size: $text-size;
+  color: $primary;
+}
+// stylizace stránky články
+.article {
+  width: 80%;
+  margin: auto;
+}
+
+.article__text {
+  font-size: $text;
+  margin-bottom: 1em;
+}
+.article__meta {
+  display: flex;
+  justify-content: right;
+  margin: 1em 0;
+}
+.article__title {
+  font-family: $text;
+  font-size: $text-size2;
+  margin-top: 1em;
+}
+.article__image {
+  width: 100%;
+}
+
+
+
 // responzivní nastavení pro velikost nad 600px, hamburger menu schovat, dát menu s tlačítky vedle se
 @media screen and (min-width: 600px) {
   .containare {
@@ -411,6 +453,19 @@ h2 {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .news__grid {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 20px;
+  }
+  .news img {
+    width: 100%;
+  }
+  .article__text {
+    font-size: $text-size2 ;
+  }
+  
+
   // responzivní nastavení pro velikost nad 850px, sekce obrázek a text dát vedle sebe
   @media screen and (min-width: 850px) {
     .containare {
@@ -488,6 +543,10 @@ h2 {
     .contact__logo {
       position: absolute;
       right: 56px;
+    }
+    .article__content {
+      display: grid;
+      grid-template-columns: 20% 1fr;
     }
   }
 }

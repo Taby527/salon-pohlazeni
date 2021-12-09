@@ -1,0 +1,22 @@
+---
+layout: moje-sablona.njk
+title: novinky
+---
+
+
+<article class="article">
+<h2 class="article__title">{{ title }}</h2>
+
+<div class="article__content">
+    <img class="article__image" src="/images/{{ foto }}" alt="{{ alt }}">
+    
+    <div class="article__text">
+        <p class="article__perex">{{  perex }}</p>
+        {{ content | safe }}
+    <p class="article__meta">Publikováno {{ page.date.toLocaleString("cs-CZ") }}</p>
+    </div>
+    
+</div>
+
+
+</article>
