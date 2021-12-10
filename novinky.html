@@ -11,8 +11,9 @@ title: Novinky
     <div class="news__blog">
       <h3>{{ post.data.title }}</h3>
       <p>{{ post.data.perex }}</p>
-      <p><a href="{{ post.url }}">celý článek</a></p>
+      <p><a class="news__more" href="{{ post.url }}">více...</a></p>
     </div>
   </div>
 </div>
 {% endfor %}
+

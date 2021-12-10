@@ -370,6 +370,10 @@ h2 {
   margin: 1em 0;
 }
 
+.news__more {
+  color: #5d4362;
+}
+
 h3 {
   margin: 0.5em 0;
   font-family: "Audiowide", cursive;

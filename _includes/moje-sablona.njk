@@ -17,11 +17,11 @@
     <body>
       <div class="containare">
         <header class="header">
-          <img
-            class="header__foto"
-            src="/images/woman-relaxing-beauty-salon.jpg"
-            alt="relaxující žena"
-          />
+          <picture>
+            <source media="(min-width:850px)" srcset="/images/woman-relaxing-beauty-salon.jpg">
+            <source media="(min-width:600px)" srcset="/images/woman-relaxing-beauty-salon-midle.png">
+            <img class="header__foto src="/images/woman-relaxing-beauty-salon-small.png" alt="relaxující žena">
+          </picture>
           <div class="header__logo">
             <div class="header__logo--original">
               <h1>Salón</h1>
