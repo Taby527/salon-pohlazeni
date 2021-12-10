@@ -3,8 +3,8 @@ layout: novinky-sablona.njk
 title: Make-up
 date: 2021-12-09T18:30
 perex: Maecenas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.
-foto: ikona_emailu.png
-alt: popisek obrázku
+foto: gorgeous-woman-with-natural-make-up-holding-brush-face-small.png
+alt: ležící žena na kosmetickém lehátku
 tags: novinky
 ---
 

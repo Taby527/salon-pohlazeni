@@ -2,8 +2,8 @@
 layout: novinky-sablona.njk
 title: Meso infusion
 perex: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.
-foto: ikona_emailu.png
-alt: popisek obrázku
+foto: young-woman-doing-procedure-face-beautician-small.png
+alt: kosmetická procedůra
 tags: novinky
 ---
 

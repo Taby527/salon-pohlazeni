@@ -357,6 +357,9 @@ h2 {
 .news__more {
   color: $tertiary;
 }
+.news__image {
+  width: 100%;
+}
 
 h3 {
   margin: .5em 0;
@@ -547,9 +550,12 @@ h3 {
       position: absolute;
       right: 56px;
     }
-    .article__content {
-      display: grid;
-      grid-template-columns: 20% 1fr;
+    .article__image {
+      width: 50%;
+      float: left;
+      margin-right: 2em;
+      margin-bottom: 2em;
+      
     }
   }
 }

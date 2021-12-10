@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
     // Zkopírovat css/ to _site/css/
     eleventyConfig.addPassthroughCopy("css");
     // Zkopírovat js do _site/js/
-    eleventyConfig.addPassthroughCopy("*.js");
+    // eleventyConfig.addPassthroughCopy("**/*.js");něco je špatně 
     return {
       // možné formáty šablon
       templateFormats: ["njk", "html", "md"],

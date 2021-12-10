@@ -3,8 +3,8 @@ layout: novinky-sablona.njk
 title: Uniqcure
 date: 2021-12-09T18:30
 perex: První viditelný odstavec. Maecenas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.
-foto: ikona_emailu.png
-alt: popisek obrázku
+foto: cosmetologist-cleaning-face-woman-beauty-salon-small.png
+alt: čistění obličeje
 tags: novinky
 ---
 

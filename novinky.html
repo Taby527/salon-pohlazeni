@@ -7,7 +7,7 @@ title: Novinky
 {% for post in collections.novinky %}
 <div class="news__border">
   <div class="news__grid">
-    <img src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+    <img class="news__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
     <div class="news__blog">
       <h3>{{ post.data.title }}</h3>
       <p>{{ post.data.perex }}</p>

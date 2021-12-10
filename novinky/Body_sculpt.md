@@ -2,8 +2,8 @@
 layout: novinky-sablona.njk
 title: Body sculpt
 perex: Maecenas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.
-foto: ikona_emailu.png
-alt: popisek obrázku
+foto: woman-cosmetologist-having-beauty-treatment-small.png
+alt: žena na kosmetické procedůře
 tags: novinky
 ---
 
