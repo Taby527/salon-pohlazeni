@@ -1,32 +1,17 @@
-// vzorek barev
-$primary: rgb(47, 27, 53);
-$secondary: rgb(119, 114, 184);
-$tertiary: rgb(93, 67, 98);
-$background1: white;
-$background2: snow;
-$pink: rgb(255, 206, 255);
-$footer: rgb(74, 55, 45);
-
-$text: "Audiowide", cursive;
-$text-size: 10px;
-$text-size2: 14px;
-$shadow: inset 0 2px 4px $secondary;
-$shadow2: 0 4px 4px $primary;
-
 html {
   background-image: url(/images/abstract-white-color-canvas-wallpaper-textures-surface.jpg);
 }
 
 p {
-  font-size: $text-size;
-  font-family: $text;
+  font-size: color.$text-size;
+  font-family: color.$text;
   margin: 0;
 }
 .containare {
   width: 320px;
   position: relative;
   margin: auto;
-  background-color: $background1;
+  background-color: color.$background1;
 }
 //  hlavička-------------------------------------------------------------
 .header__foto {
@@ -49,24 +34,24 @@ p {
 }
 .header__logo--smaller,
 .header__logo--original {
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 1em;
 }
 .header__logo--original {
-  color: $pink;
-  font-family: $text;
-  font-size: $text-size;
+  color: color.$pink;
+  font-family: color.$text;
+  font-size: color.$text-size;
   box-sizing: border-box;
-  border: 5px solid $pink;
-  box-shadow: $shadow;
+  border: 5px solid color.$pink;
+  box-shadow: color.$shadow;
   border-radius: 5px;
 }
 .header__logo--smaller {
-  color: $pink;
-  font-family: $text;
+  color: color.$pink;
+  font-family: color.$text;
   font-size: 8px;
   box-sizing: border-box;
-  border: 5px solid $pink;
-  box-shadow: $shadow;
+  border: 5px solid color.$pink;
+  box-shadow: color.$shadow;
   border-radius: 5px;
 }
 h1 {
@@ -76,7 +61,7 @@ h1 {
 
 // -- patička------------------------------------------
 .footer {
-  background-color: $footer;
+  background-color: color.$footer;
   width: 100%;
   height: 100px;
   display: block;
@@ -88,9 +73,9 @@ h1 {
   width: 170px;
 }
 .footer__text {
-  font-size: $text-size;
+  font-size: color.$text-size;
   text-align: center;
-  color: $background2;
+  color: color.$background2;
   margin-top: 1em;
 }
 
@@ -98,26 +83,26 @@ h1 {
 // menu hamburger---------------------------------
 .menu {
   overflow: hidden;
-  background-color: $primary;
+  background-color: color.$primary;
   position: relative;
 }
 .menu__links a {
-  color: $background2;
+  color: color.$background2;
   text-decoration: none;
-  font-size: $text-size2;
-  font-family: $text;
+  font-size: color.$text-size2;
+  font-family: color.$text;
   display: block;
   text-align: center;
   margin-top: 4px;
-  padding: $text-size 0;
-  box-shadow: $shadow;
+  padding: color.$text-size 0;
+  box-shadow: color.$shadow;
 }
 
 .menu__links a:hover {
-  background-color: $secondary;
+  background-color: color.$secondary;
 }
 a:focus {
-  background-color: $tertiary;
+  background-color: color.$tertiary;
 }
 a:active {
   border-bottom-width: 2px;
@@ -125,7 +110,7 @@ a:active {
 }
 
 .menu__hamburger {
-  background-color: $primary;
+  background-color: color.$primary;
   border: none;
   cursor: pointer;
   position: relative;
@@ -142,9 +127,9 @@ a:active {
 .menu__burger {
   width: 25px;
   height: 3px;
-  background: $background2;
+  background: color.$background2;
   border-radius: 5px;
-  box-shadow: 0 1px 2px $secondary;
+  box-shadow: 0 1px 2px color.$secondary;
   transition: all 0.5s ease-in-out;
 }
 .menu__burger::before,
@@ -154,9 +139,9 @@ a:active {
   right: 5px;
   width: 25px;
   height: 3px;
-  background: $background2;
+  background: color.$background2;
   border-radius: 5px;
-  box-shadow: 0 1px 2px $secondary;
+  box-shadow: 0 1px 2px color.$secondary;
   transition: all 0.5s ease-in-out;
 }
 .menu__burger::before {
@@ -196,13 +181,13 @@ a:active {
   margin-left: 10%;
 }
 .section__foto {
-  box-shadow: $shadow2;
+  box-shadow: color.$shadow2;
 }
 .section__text {
   margin: 1em 0 0 0;
   text-align: center;
-  font-family: $text;
-  font-size: $text-size;
+  font-family: color.$text;
+  font-size: color.$text-size;
   padding: 1em;
 }
 // ------------------------------------
@@ -214,13 +199,13 @@ a:active {
 .main__h2 {
   width: 80%;
   margin: auto;
-  font-family: $text;
+  font-family: color.$text;
   padding-top: 20px;
 }
 h2 {
   margin: 0;
   margin-bottom: 20px;
-  color: $primary;
+  color: color.$primary;
 }
 .main__grid {
   width: 80%;
@@ -230,8 +215,8 @@ h2 {
 .main__border {
   display: grid;
   grid-template-columns: 1fr 4em;
-  background-color: $background1;
-  box-shadow: $shadow2;
+  background-color: color.$background1;
+  box-shadow: color.$shadow2;
   margin-bottom: 1em;
 }
 .main__title,
@@ -240,8 +225,8 @@ h2 {
   padding: 0;
 }
 .main__title {
-  font-family: $text;
-  font-size: $text-size2;
+  font-family: color.$text;
+  font-size: color.$text-size2;
   background-color: transparent;
   text-align: left;
   border: none;
@@ -290,7 +275,7 @@ h2 {
   margin-bottom: 1em;
 }
 .contact__logo {
-  background-color: $footer;
+  background-color: color.$footer;
   border-radius: 5px;
   position: absolute;
   right: 27px;
@@ -318,7 +303,7 @@ h2 {
 .contact__map {
   margin: auto;
   margin-top: 1em;
-  box-shadow: $shadow2;
+  box-shadow: color.$shadow2;
 }
 .contact__iframe {
   width: 100%;
@@ -326,22 +311,32 @@ h2 {
 .contact__formular {
   margin-top: 2em;
   padding: 0.5em 1em;
-  font-family: $text;
-  font-size: $text-size;
-  background-color: $background2;
-  box-shadow: $shadow2;
+  font-family: color.$text;
+  font-size: color.$text-size;
+  background-color: color.$background2;
+  box-shadow: color.$shadow2;
+}
+.contact__tab {
+  width: 60%;
+  justify-content: right;
+}
+.contact__form-field input,
+.contact__form-field textarea {
+  display: flex;
+  flex-grow: 1;
+  width: 97%;
+  margin: auto;
 }
 .contact__button {
-  background-color: $primary;
+  background-color: color.$primary;
   border: none;
-  box-shadow: $shadow;
+  box-shadow: color.$shadow;
   padding: 5px 5px;
   border-radius: 5px;
-  font-family: $text;
-  margin-left: 170px;
+  font-family: color.$text;
 }
 .contact__button2 {
-  color: $background2;
+  color: color.$background2;
   text-decoration: none;
 }
 
@@ -349,23 +344,22 @@ h2 {
 .news__border {
   width: 80%;
   margin: auto;
-  
 }
 .news__grid {
   margin: 1em 0;
 }
 .news__more {
-  color: $tertiary;
+  color: color.$tertiary;
 }
 .news__image {
   width: 100%;
 }
 
 h3 {
-  margin: .5em 0;
-  font-family: $text;
-  size: $text-size;
-  color: $primary;
+  margin: 0.5em 0;
+  font-family: color.$text;
+  size: color.$text-size;
+  color: color.$primary;
 }
 // stylizace stránky články
 .article {
@@ -374,7 +368,7 @@ h3 {
 }
 
 .article__text {
-  font-size: $text;
+  font-size: color.$text;
   margin-bottom: 1em;
 }
 .article__meta {
@@ -383,15 +377,13 @@ h3 {
   margin: 1em 0;
 }
 .article__title {
-  font-family: $text;
-  font-size: $text-size2;
+  font-family: color.$text;
+  font-size: color.$text-size2;
   margin-top: 1em;
 }
 .article__image {
   width: 100%;
 }
-
-
 
 // responzivní nastavení pro velikost nad 600px, hamburger menu schovat, dát menu s tlačítky vedle se
 @media screen and (min-width: 600px) {
@@ -406,16 +398,16 @@ h3 {
     width: 33%;
   }
   .header__logo--original {
-    font-size: $text-size2;
+    font-size: color.$text-size2;
   }
   .footer__logo {
     width: 38%;
   }
   .header__logo--smaller {
-    font-size: $text-size;
+    font-size: color.$text-size;
   }
   .section__text {
-    font-size: $text-size2;
+    font-size: color.$text-size2;
   }
   .menu__hamburger {
     display: none;
@@ -430,28 +422,19 @@ h3 {
     cursor: pointer;
   }
   p {
-    font-size: $text-size2;
+    font-size: color.$text-size2;
   }
   .contact__logo {
     width: 210px;
   }
   form {
     width: 100%;
-    font-size: $text-size2;
+    font-size: color.$text-size2;
   }
   .contact__form-field {
     margin-top: 10px;
-    display: flex;
-  }
-  .contact__form-field label {
-    flex: 0 0 7em;
   }
 
-  .contact__form-field input,
-  .contact__form-field textarea {
-    width: 97%;
-    flex: 1 1 100%;
-  }
   .contact__map {
     height: 100%;
   }
@@ -468,9 +451,8 @@ h3 {
     width: 100%;
   }
   .article__text {
-    font-size: $text-size2 ;
+    font-size: color.$text-size2;
   }
-  
 
   // responzivní nastavení pro velikost nad 850px, sekce obrázek a text dát vedle sebe
   @media screen and (min-width: 850px) {
@@ -499,7 +481,7 @@ h3 {
       font-size: 20px;
     }
     .footer__text {
-      font-size: $text-size2;
+      font-size: color.$text-size2;
     }
     .section {
       padding: 0;
@@ -528,7 +510,7 @@ h3 {
       margin: 0;
     }
     p {
-      font-size: $text-size2;
+      font-size: color.$text-size2;
     }
     .contact__map-formular {
       display: grid;
@@ -542,9 +524,6 @@ h3 {
     .contact__iframe {
       height: 100%;
     }
-    .contact__button {
-      margin-left: 233px;
-    }
 
     .contact__logo {
       position: absolute;
@@ -555,7 +534,6 @@ h3 {
       float: left;
       margin-right: 2em;
       margin-bottom: 2em;
-      
     }
   }
 }

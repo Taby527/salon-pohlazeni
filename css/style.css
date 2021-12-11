@@ -346,6 +346,19 @@ h2 {
   box-shadow: 0 4px 4px #2f1b35;
 }
 
+.contact__tab {
+  width: 60%;
+  justify-content: right;
+}
+
+.contact__form-field input,
+.contact__form-field textarea {
+  display: flex;
+  flex-grow: 1;
+  width: 97%;
+  margin: auto;
+}
+
 .contact__button {
   background-color: #2f1b35;
   border: none;
@@ -472,17 +485,6 @@ h3 {
 
   .contact__form-field {
     margin-top: 10px;
-    display: flex;
-  }
-
-  .contact__form-field label {
-    flex: 0 0 7em;
-  }
-
-  .contact__form-field input,
-.contact__form-field textarea {
-    width: 97%;
-    flex: 1 1 100%;
   }
 
   .contact__map {
