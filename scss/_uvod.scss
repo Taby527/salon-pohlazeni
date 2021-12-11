@@ -1,0 +1,33 @@
+@use "color";
+
+// stylizace stránky úvod-section(main)
+.section {
+    padding-bottom: color.$text-size2;
+  }
+  .section__images,
+  .section__border {
+    width: 80%;
+    margin: auto;
+    margin-top: 14px;
+  }
+  .section__foto {
+    box-shadow: color.$shadow2;
+    width: 100%;
+  }
+  .section__text {
+    margin: 1em 0 0 0;
+    text-align: center;
+    font-family: color.$text;
+    font-size: color.$text-size;
+    padding: 1em;
+  }
+  .section__licence {
+    font-size: 5px;
+    margin: 0;
+    text-align: right;
+  }
+  .section__licence a {
+    color: color.$tertiary;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,104 @@
+@use "color";
+@use "uvod";
+@use "kontakt";
+@use "cenik";
+@use "novinky";
+
+// responzivní nastavení pro velikost nad 600px, hamburger menu schovat, dát menu s tlačítky vedle se
+@media screen and (min-width: 600px) {
+  .containare {
+    width: 550px;
+  }
+  // stylizace hlavičky------------
+  .header__foto {
+    object-fit: cover;
+    height: 300px;
+  }
+  .header__logo {
+    width: 33%;
+  }
+  .header__logo--original {
+    font-size: color.$text-size2;
+  }
+  // ---------------------
+  // stylizace zápatí-footer
+  .footer__logo {
+    width: 38%;
+  }
+  
+  .header__logo--smaller {
+    font-size: color.$text-size;
+  }
+  // -------------------------
+
+  .section__text {
+    font-size: color.$text-size2;
+  }
+  // stylizace navigace, zmizí hamburger menu, tlačítka jsou v řade
+  .menu__hamburger {
+    display: none;
+  }
+  .menu__links {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3px;
+  }
+  .menu__links a {
+    width: 8em;
+    cursor: pointer;
+  }
+  p {
+    font-size: color.$text-size2;
+  }
+  // -----------------------------
+  // --stylizace stránky kontakt
+  .contact__logo {
+    width: 210px;
+  }
+  form {
+    width: 100%;
+    font-size: color.$text-size2;
+  }
+  .contact__form-field {
+    margin-top: 10px;
+  }
+
+  .contact__map {
+    height: 100%;
+  }
+  .contact__form-checkbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .contact__form-field input {
+    margin-left: 5px;
+  }
+  .contact__button {
+    margin-left: 350px;
+  }
+  // --------------------------
+  //  stylizace stránky novinky
+  .news__grid {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 20px;
+  }
+
+  // ----------------------------
+  // stylizace článku-blog
+  .article__text {
+    font-size: color.$text-size2;
+  }
+  .article__image {
+    width: 30%;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+  .article__image {
+    margin-top: 0;
+  }
+  .article__button {
+    margin-left: 393px;
+  }
+}

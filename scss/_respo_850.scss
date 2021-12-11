@@ -1,0 +1,100 @@
+@use "color";
+@use "uvod";
+@use "kontakt";
+@use "cenik";
+@use "novinky";
+@use "respo_600";
+
+// responzivní nastavení pro velikost nad 850px, sekce obrázek a text dát vedle sebe
+@media screen and (min-width: 850px) {
+  .containare {
+    width: 800px;
+  }
+  // stylizace hlavičky---------
+  .header__foto {
+    height: 350px;
+  }
+  .header__logo {
+    margin-top: 20px;
+    right: 20px;
+  }
+  .header__logo--original {
+    font-size: 20px;
+  }
+  // ------------------------------
+  // stylizace zápatí
+  .footer {
+    height: 170px;
+  }
+  .footer__logo,
+  .contact__logo {
+    width: 408px;
+    padding-top: 20px;
+  }
+  .header__logo--smaller {
+    font-size: 20px;
+  }
+  .footer__text {
+    font-size: color.$text-size2;
+  }
+  // ---------------------------
+  // stylizace úvodní strany
+  .section {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 500px;
+  }
+  .section__images,
+  .section__border {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+  }
+  .section__border {
+    display: grid;
+    grid-template-rows: repeat(3 auto);
+    gap: 1em;
+  }
+  .section__foto {
+    margin: 0;
+    object-fit: cover;
+    height: 320px;
+  }
+
+  .section__text {
+    margin: 0;
+  }
+  // --------------------------------
+  p {
+    font-size: color.$text-size2;
+  }
+  // stylizace stránky kontakt
+  .contact__map-formular {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 20px;
+  }
+  .contact__map,
+  .contact__formular {
+    margin: 0;
+  }
+  .contact__iframe {
+    height: 100%;
+  }
+
+  .contact__logo {
+    position: absolute;
+    right: 56px;
+  }
+  .contact__form-field input {
+    margin-left: -2px;
+  }
+  .contact__button {
+    margin-left: 232px;
+  }
+  // stylizace článku-blog
+  .article__button {
+    margin-left: 593px;
+  }
+}

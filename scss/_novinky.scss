@@ -1,0 +1,21 @@
+@use "color";
+
+// stylování stránky novinky-----------
+.news__border {
+    width: 80%;
+    margin: auto;
+  }
+  .news__grid {
+    margin: 1em 0;
+  }
+  .news__more {
+    color: color.$tertiary;
+  }
+  .news__images {
+    width: 100%;
+  }
+  .news__foto {
+    width: 100%;
+  }
+  
+  

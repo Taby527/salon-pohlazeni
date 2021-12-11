@@ -1,9 +1,11 @@
 ---
-layout: novinky-sablona.njk
+layout: layouts/novinky-sablona.njk
 title: Prodigy
 perex:  Maecenas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.
 foto: woman-holds-jar-with-cosmetic-cream-her-hands-small.png
 alt: nanášení krému na ruce
+origin: https://www.freepik.com/photos/woman
+text: Woman photo created by jcomp - www.freepik.com
 tags: novinky
 ---
 

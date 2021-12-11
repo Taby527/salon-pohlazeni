@@ -1,9 +1,11 @@
 ---
-layout: novinky-sablona.njk
+layout: layouts/novinky-sablona.njk
 title: Body sculpt
 perex: Maecenas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.
 foto: woman-cosmetologist-having-beauty-treatment-small.png
 alt: žena na kosmetické procedůře
+origin: https://www.freepik.com/photos/people
+text: People photo created by senivpetro - www.freepik.com
 tags: novinky
 ---
 

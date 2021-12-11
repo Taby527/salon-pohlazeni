@@ -1,0 +1,35 @@
+@use "color";
+
+.footer {
+  background-color: color.$footer;
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+.footer__logo,
+.contact__logo {
+  margin: auto;
+  padding-top: 14px;
+  width: 170px;
+  cursor: pointer;
+}
+.footer__logo a {
+  text-decoration: none;
+}
+
+.footer__text,
+.footer__licence {
+  text-align: center;
+}
+.footer__text {
+  font-size: color.$text-size;
+  margin-top: 1em;
+  color: color.$background2;
+}
+.footer__licence {
+  font-size: 5px;
+}
+.footer__licence a {
+  text-decoration: none;
+  color: color.$background2;
+}

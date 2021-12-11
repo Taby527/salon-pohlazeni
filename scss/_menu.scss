@@ -1,0 +1,91 @@
+@use "color";
+
+// menu hamburger---------------------------------
+.menu {
+    overflow: hidden;
+    background-color: color.$primary;
+    position: relative;
+  }
+  .menu__links a {
+    color: color.$background2;
+    text-decoration: none;
+    font-size: color.$text-size2;
+    font-family: color.$text;
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+    padding: color.$text-size 0;
+    box-shadow: color.$shadow;
+  }
+  
+  .menu__links a:hover {
+    background-color: color.$secondary;
+  }
+  a:focus {
+    background-color: color.$tertiary;
+  }
+  a:active {
+    border-bottom-width: 2px;
+    transform: translateY(2px);
+  }
+  
+  .menu__hamburger {
+    background-color: color.$primary;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s ease-in-out;
+    left: 83%;
+    border: 2px solid color.$background2;
+    margin: 2% 0;
+  }
+  .menu__burger {
+    width: 25px;
+    height: 3px;
+    background: color.$background2;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px color.$secondary;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu__burger::before,
+  .menu__burger::after {
+    content: " ";
+    position: absolute;
+    right: 5px;
+    width: 25px;
+    height: 3px;
+    background: color.$background2;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px color.$secondary;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu__burger::before {
+    transform: translateY(-8px);
+  }
+  .menu__burger::after {
+    transform: translateY(8px);
+  }
+  .menu__links {
+    display: none;
+  }
+  #nav-ul.show {
+    display: block;
+  }
+  // animace hamburger menu, změní se na křížek
+  .menu__hamburger.open .menu__burger {
+    transform: translateX(-25px);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+  }
+  .menu__hamburger.open .menu__burger::before {
+    transform: rotate(45deg) translate(22px, -22px);
+  }
+  .menu__hamburger.open .menu__burger::after {
+    transform: rotate(-45deg) translate(22px, 22px);
+  }

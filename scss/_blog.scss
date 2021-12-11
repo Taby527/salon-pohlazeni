@@ -1,0 +1,29 @@
+@use "color";
+
+// stylizace článků-blog
+.article {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .article__text {
+    font-size: color.$text;
+    margin-bottom: 1em;
+  }
+  .article__meta {
+    display: flex;
+    justify-content: right;
+    margin: 1em 0;
+  }
+  .article__title {
+    font-family: color.$text;
+    font-size: color.$text-size2;
+    margin-top: 1em;
+  }
+  .article__image {
+    width: 100%;
+    margin-top: 1em;
+  }
+  .article__button {
+    margin-left: 213px;
+  }

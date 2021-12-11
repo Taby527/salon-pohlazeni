@@ -1,0 +1,35 @@
+@use "color";
+@use "uvod";
+@use "kontakt";
+@use "cenik";
+@use "novinky";
+@use "respo_600";
+@use "respo_850";
+
+
+// responzivní nastavení pro velikost nad 1200px
+@media screen and (min-width: 1200px) {
+  .containare {
+    width: 1050px;
+  }
+  // hlavička
+  .header__logo {
+    width: 24%;
+  }
+  // patička
+  .footer__logo {
+    width: 39%;
+  }
+  // uvodní strana
+  .section {
+    height: 400px;
+  }
+  // kontakt stránka
+  .contact__button {
+    margin-left: 330px;
+  }
+  // úprava článku-blog
+  .article__button {
+    margin-left: 791px;
+  }
+}

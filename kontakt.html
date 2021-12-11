@@ -1,5 +1,5 @@
 ---
-layout: moje-sablona.njk
+layout: layouts/moje-sablona.njk
 title: Úvodní strana
 ---
 
@@ -16,9 +16,11 @@ title: Úvodní strana
       <p class="contact__info">Ne: Zavřeno</p>
     </div>
     <div class="contact__border">
-      <div class="contact__logo header__logo--smaller">
-        <h1>Salón Pohlazení</h1>
-      </div>
+      <a href="/uvod">
+        <div class="contact__logo header__logo--smaller">
+          <h1>Salón Pohlazení</h1>
+        </div>
+      </a>
       <div class="contact__flex">
         <img
           class="contact__icon contact__adress"
@@ -59,12 +61,12 @@ title: Úvodní strana
         ></iframe>
       </div>
       <div class="contact__formular">
-        <form action="kontakt" method="post">
+        <form action="formular.php" method="post">
           <div class="contact__form-field">
             <table>
               <tr>
                 <td><label for="name" type="text">Vaše jméno</label></td>
-                <td class="contact__tab"><input type="text" /></td>
+                <td class="contact__tab"><input type="text" name="jmeno" /></td>
               </tr>
               <tr>
                 <td><label for="email">E-mail</label></td>
@@ -78,10 +80,6 @@ title: Úvodní strana
                   />
                 </td>
               </tr>
-              <tr>
-              <td><label for="">Aktuální rok</label></td>
-              <td class="contact__tab"><input type="rok" type="number" /></td>
-            </tr>
             </table>
           </div>
           <div class="contact__form-field">
