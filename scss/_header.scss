@@ -1,46 +1,47 @@
 @use "color";
 
 .header__foto {
-    width: 100%;
-    position: relative;
-    align-items: center;
-    height: auto;
-  }
-  
-  .header {
-    display: flex;
-  }
-  
-  .header__logo {
-    margin: 10px 0 0;
-    padding: 0;
-    position: absolute;
-    right: 10px;
-    width: 43%;
-    cursor: pointer;
-  }
-  .header__logo a {
-    text-decoration: none;
-  }
-  .header__logo--smaller,
-  .header__logo--original {
-    padding: 0.5em 1em;
-  }
-  .header__logo--original {
-    color: color.$pink;
-    font-family: color.$text;
-    font-size: color.$text-size;
-    box-sizing: border-box;
-    border: 5px solid color.$pink;
-    box-shadow: color.$shadow;
-    border-radius: 5px;
-  }
-  .header__logo--smaller {
-    color: color.$pink;
-    font-family: color.$text;
-    font-size: 8px;
-    box-sizing: border-box;
-    border: 5px solid color.$pink;
-    box-shadow: color.$shadow;
-    border-radius: 5px;
-  }
+  width: 100%;
+  position: relative;
+  align-items: center;
+  height: auto;
+}
+
+
+.header {
+  display: flex;
+}
+
+.header__logo {
+  margin: 10px 0 0;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  width: 43%;
+  cursor: pointer;
+}
+.header__logo a {
+  text-decoration: none;
+}
+.header__logo--smaller,
+.header__logo--original {
+  padding: 0.5em 1em;
+}
+.header__logo--original {
+  color: color.$pink;
+  font-family: color.$text;
+  font-size: color.$text-size;
+  box-sizing: border-box;
+  border: 5px solid color.$pink;
+  box-shadow: color.$shadow;
+  border-radius: 5px;
+}
+.header__logo--smaller {
+  color: color.$pink;
+  font-family: color.$text;
+  font-size: 8px;
+  box-sizing: border-box;
+  border: 5px solid color.$pink;
+  box-shadow: color.$shadow;
+  border-radius: 5px;
+}
