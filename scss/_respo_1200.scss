@@ -5,6 +5,7 @@
 @use "novinky";
 @use "respo_600";
 @use "respo_850";
+@use "potvrzeni";
 
 
 // responzivní nastavení pro velikost nad 1200px
@@ -31,5 +32,9 @@
   // úprava článku-blog
   .article__button {
     margin-left: 791px;
+  }
+  // stylizace potvrzení
+  .confirm__button {
+    margin-left: 485px;
   }
 }

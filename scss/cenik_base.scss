@@ -1,0 +1,26 @@
+@use "color";
+@use "cenik";
+
+.main__price-list {
+    width: 80%;
+    margin: auto;
+}
+.main__button,
+.main__button a {
+    width: 100%;
+}
+.main__button {
+    margin-bottom: 1em;
+    border: none;
+    background-color: color.$background1;
+    box-shadow: color.$shadow2;
+}
+.main__button a {
+    text-decoration: none;
+    font-family: color.$text;
+    color: color.$primary;
+}
+.main__button img {
+    margin: 1em 0;
+    width: 80%;
+}

@@ -19,11 +19,11 @@
   right: 27px;
 }
 .contact__info {
-  padding: 0.5em 1em;
+  padding: 0.5em .3em;
 }
 .contact__icon {
   height: 1em;
-  padding-left: 0.7em;
+  
 }
 .contact__flex {
   display: grid;
@@ -32,11 +32,13 @@
 .contact__adress {
   padding-top: 15px;
 }
+
 .contact__tel {
-  padding-top: 4px;
+  padding-top: 2px;
+  
 }
 .contact__email {
-  padding-top: 5px;
+  padding-top: 4px;
 }
 .contact__map {
   margin: auto;
@@ -63,7 +65,9 @@
   width: 98%;
 }
 .contact__button,
-.article__button {
+.article__button,
+.confirm__button,
+.main__back {
   background-color: color.$primary;
   border: none;
   box-shadow: color.$shadow;
@@ -75,8 +79,11 @@
   margin-left: 170px;
 }
 .contact__button2,
-.article__button2 {
+.article__button2,
+.confirm__button2,
+.main__back a {
   color: color.$background2;
   text-decoration: none;
 }
+
 

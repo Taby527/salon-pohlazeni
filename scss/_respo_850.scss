@@ -4,6 +4,8 @@
 @use "cenik";
 @use "novinky";
 @use "respo_600";
+@use "potvrzeni";
+@use "cenik_base";
 
 // responzivní nastavení pro velikost nad 850px, sekce obrázek a text dát vedle sebe
 @media screen and (min-width: 850px) {
@@ -97,4 +99,15 @@
   .article__button {
     margin-left: 593px;
   }
+  // stylizace potvrzení
+  .confirm__button {
+    margin-left: 359px;
+  }
+  // stylizace ceníku-rozstřel
+  .main__price-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1em;
+  }
+  
 }

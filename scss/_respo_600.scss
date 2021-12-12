@@ -3,6 +3,8 @@
 @use "kontakt";
 @use "cenik";
 @use "novinky";
+@use "potvrzeni";
+@use "cenik_base";
 
 // responzivní nastavení pro velikost nad 600px, hamburger menu schovat, dát menu s tlačítky vedle se
 @media screen and (min-width: 600px) {
@@ -25,7 +27,7 @@
   .footer__logo {
     width: 38%;
   }
-  
+
   .header__logo--smaller {
     font-size: color.$text-size;
   }
@@ -101,4 +103,21 @@
   .article__button {
     margin-left: 393px;
   }
+  // stylizace stránky potvrzení
+  .confirm__button {
+    margin-left: 234px;
+  }
+  // stylizace ceníku-rozstřel
+  .main__button {
+    height: 300px;
+  }
+  .main__button a {
+    font-size: color.$text-size2;
+  }
+  .main__button img {
+    object-fit: cover;
+    height: 70%;
+  }
+  
+
 }

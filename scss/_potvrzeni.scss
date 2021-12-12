@@ -1,0 +1,27 @@
+@use "color";
+
+.confirm {
+    background-color: color.$background2;
+    height: 140px;
+    display: flex;
+}
+.confirm__border {
+    box-shadow: color.$shadow2;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+    border-radius: 5px;
+}
+.confirm__text {
+    font-size: color.$text-size2;
+    text-align: center;
+}
+.confirm__text,
+.confirm__button {
+    margin-top: 1em;
+}
+.confirm__button {
+    margin-left: 120px;
+    margin-bottom: 1em;
+}
+
