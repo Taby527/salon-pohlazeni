@@ -1,6 +1,5 @@
 @use "color";
 
-
 //  stylizace stránky kontakt---
 // ------------------------------
 
@@ -19,11 +18,10 @@
   right: 27px;
 }
 .contact__info {
-  padding: 0.5em .3em;
+  padding: 0.5em 0.3em;
 }
 .contact__icon {
   height: 1em;
-  
 }
 .contact__flex {
   display: grid;
@@ -35,7 +33,6 @@
 
 .contact__tel {
   padding-top: 2px;
-  
 }
 .contact__email {
   padding-top: 4px;
@@ -77,13 +74,11 @@
 }
 .contact__button {
   margin-left: 170px;
+  color: color.$background2;
 }
-.contact__button2,
 .article__button2,
 .confirm__button2,
 .main__back a {
   color: color.$background2;
   text-decoration: none;
 }
-
-
